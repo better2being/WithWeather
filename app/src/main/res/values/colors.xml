@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#42628C</color>
+    <color name="colorPrimaryDark">#3E598A</color>
+    <color name="colorAccent">#42628C</color>
+    <color name="white">#ffffff</color>
+
+    <color name="excellent">#00FF00</color>
+    <color name="good">#FFFF00</color>
+    <color name="slight">#FF7F00</color>
+    <color name="moderate">#FF0000</color>
+    <color name="severe">#7F007F</color>
+    <color name="serious">#7F0000</color>
+</resources>

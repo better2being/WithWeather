@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">With天气</string>
+    <string name="action_settings">Settings</string>
+    <string name="default_city">北京</string>
+    <string name="weather_detail"><![CDATA[天气详情>]]></string>
+    <string name="aqi_cond">空气质量：</string>
+    <string name="dafault_color">良好</string>
+    <string name="today_sun">日出日落</string>
+    <string name="weather_api">以上数据来源于和风天气</string>
+    <string name="week_weather">未来一周天气</string>
+    <string name="today_weather">今日详情</string>
+    <string name="life_weather">生活指数</string>
+    <string name="life_cmf">舒适度</string>
+    <string name="life_drsg">穿衣指数</string>
+    <string name="life_flu">感冒指数</string>
+    <string name="life_sport">运动指数</string>
+    <string name="life_trav">旅游指数</string>
+    <string name="life_uv">紫外线</string>
+    <string name="life_cw">洗车指数</string>
+</resources>
