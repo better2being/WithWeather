@@ -44,7 +44,7 @@ public class WeatherDataUtil {
      * 获取天气，直接同步方式
      */
     public static void requestWeather() {
-        String httpUrl = "http://apis.baidu.com/heweather/weather/free";
+        String httpUrl = "http://apis.baidu.com/heweather/pro/weather";
         String httpArg = "city=" + city;
         BufferedReader reader;
         String result = "";
@@ -86,7 +86,7 @@ public class WeatherDataUtil {
     public static void connectWeather() {
         Parameters para = new Parameters();
         para.put("city", city);
-        ApiStoreSDK.execute("http://apis.baidu.com/heweather/weather/free",
+        ApiStoreSDK.execute("http://apis.baidu.com/heweather/pro/weather",
                 ApiStoreSDK.GET,
                 para,
                 new ApiCallBack() {

@@ -201,6 +201,9 @@ public class MainActivity extends AppCompatActivity {
     private void connectLocation() {
         // 获取network的位置提供器
         List<String> providerList = locationManager.getProviders(true);
+        for (String s : providerList) {
+            Log.e("providerList", s);
+        }
         String provider;
         currentLocation = false;
         if (providerList.contains(LocationManager.NETWORK_PROVIDER)) {
@@ -218,8 +221,8 @@ public class MainActivity extends AppCompatActivity {
                 // 位置信息中获取城市
                 connectCity(location);
             } else {
-                Log.e(TAG, "no location");
-            }
+            Log.e(TAG, "no location");
+        }
             locationManager.requestLocationUpdates(provider, 1000 * 60, 200, locationListener);
         } catch (SecurityException e) {
             e.printStackTrace();

@@ -1,7 +1,11 @@
 package com.shenxm.withweather.util.weather;
 
 
+import android.text.TextUtils;
+import android.widget.Toast;
+
 import com.shenxm.withweather.R;
+import com.shenxm.withweather.app.App;
 
 /**
  * Created by SHEN XIAOMING on 2016/6/28.
@@ -9,6 +13,10 @@ import com.shenxm.withweather.R;
 public class WeatherIconUtil {
 
     static public int getWeatherIcon(String code) {
+        if (TextUtils.isEmpty(code)) {
+            Toast.makeText(App.getmAppContext(), "Internal Server Error", Toast.LENGTH_LONG).show();
+            return R.mipmap.icon101;
+        }
         switch (Integer.parseInt(code)) {
             case 100:
                 return R.mipmap.icon100;
